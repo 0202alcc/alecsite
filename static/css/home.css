@@ -1,0 +1,56 @@
+img {
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: 10%;
+}
+#intro {
+    height:100%;
+}
+.home {
+  color: #A67B5C;
+}
+/* Scroller styling */
+.scroller {
+    height: 1.1em;
+    line-height: 1.1em;
+    position: relative;
+    overflow: hidden;
+    width: 4.6em;
+    margin:0;
+    display:inline-block;
+    color:#A67B5C;
+}
+.scroller > span {
+    position: absolute;
+    top: 0;
+    animation: slide 5s infinite;
+  /*   font-weight: bold; */    
+}
+
+/* Content */
+.face {
+  height: 30vh;
+}
+h1 {
+  margin-bottom: 0px;
+  color: #A67B5C; /*d0592a;*/
+  top:1em;
+}
+h6 {
+  line-height: 1.75;
+}
+@keyframes slide {
+    0% {
+      top: 0;
+    }
+    25% {
+      top: -1.1em;
+    }
+    50% {
+      top: -2.2em;
+    }
+    75% {
+      top: -3.3em;
+    }
+}

@@ -1,0 +1,39 @@
+{% extends "index.html" %}
+{% block custom_css %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/home.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col s12 face"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Man_shadow_-_upper.png/350px-Man_shadow_-_upper.png"></div>
+    <div class="col s1 m4"></div>
+    <h1 class="col s10 m6">
+        hi! i'm alec.
+    </h1>
+    <div class="col s1 m2"></div>
+    <div class="col s1 m4"></div>
+    <h6 class="col s10 m6">i'm
+        <div class="scroller">
+            <span>
+            a robotics<br/>
+            an AI/ML<br/>
+            a software<br/>
+            a Fil-Am<br />
+            </span>
+        </div>
+        engineer.
+    </h6>
+</div>
+<div class="row">
+    <div class="col m3"></div>
+    <h6 class="col m6">
+        welcome to my personal website! here, i'm excited to present a collection of projects that reflect my passion for technology
+        and innovation. this website serves as a repository where i can share my journey as an engineer and celebrate the curious and creative spirit that drives me. 
+        whether you're a fellow enthusiast of technology or simply interested in witnessing the art of problem-solving in action, 
+        i invite you to join me on this exploration. enjoy the ride!<br><br>
+        <i>~this website was entirely designed and developed by me with some help from chat-gpt :)~</i>
+    </h6>
+</div>
+
+{% endblock %}

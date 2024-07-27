@@ -1,0 +1,27 @@
+{% extends "index.html" %}
+{% block custom_css %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/about.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<div class="row valign-wrapper ">
+    <p class="col m5">
+        I was born in Manila, Philippines on October 2nd, 2002; although, my family is originally from the city of Masbate. 
+        I moved to New York City when I was two years old because my mom was offered a job as a high school math teacher there.
+        I grew up in Canarsie, Brooklyn and went through the NYC public school system until I joined Prep for Prep in middle school.
+        Because of this program, I was able to get a scholarship to attend the Browning School on the Upper East Side in Manhattan.
+        Here, I was able to begin exploring my STEM passions. In eleventh grade, I joined the IAC fellowship and began with an internship in front-end
+        development. High school was also an opportunity for me to learn about more aspects of my identity and the world. I attended the
+        Student Diversity Leadership Conference where I learned how to strengthen my character with my diverse indentities. I also participated
+        in the Student Diplomacy Leadership Corps program where I got to spend four weeks in China learning about Chinese culture, Climate Change, and
+        what Chinese scientists have been doing to combat it. These experiences greatly influenced where I ended up going to college:
+        Harvey Mudd, a STEM-focused liberal arts college. As an engineering major, I've been learning under HMC's world-renowned curriculum.
+        Being an "all-around" engineer has helped me succeed in my A.I. Research Internships with J.P. Morgan. Still wanting to learn about
+        the different perspectives of the world, I found myself studying for a semester in Spain at the Uniersidad Carlos III de Madrid. Now, I
+        am a senior and looking forward to what the future has in store for me.
+    </p>
+    <div class="col m7 map"></div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,52 @@
+body {
+    background-color: ivory;
+    font-weight: bold;
+}
+h1, h2, h3, h4, h5, h6, p {
+    font-family: Georgia, Garamond, 'Times New Roman';
+}
+
+p {
+    font-weight: normal;
+}
+#head {
+    -webkit-transition: width 2s ease;
+    -moz-transition: width 2s ease;
+    -o-transition: width 2s ease;
+    transition: width 2s ease;
+    
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    vertical-align: middle;
+    line-height: 30px;
+    height: 30px;
+
+    width: 0px;
+
+}
+#head.in {
+    width: calc(100%);
+}
+#hamburger {
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+#custom_header {
+    background-color: None;
+    position: absolute;
+    width:100%;
+    top: 0%;
+    margin-top: 15px;
+    padding-left: 60px;
+    padding-right: 60px;
+    z-index: 2;
+}
+.ref{
+    /*#989898*/
+    color: #191919;
+    font-weight: bold;
+    font-size: 14pt;
+}
