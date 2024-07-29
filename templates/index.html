@@ -25,10 +25,10 @@
 		<div class="nav-wrapper navbar">
 		  	<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 		  	<ul class="tabbar-tabs hide-on-med-and-down">
-					<li><a class="tabbar-tabs-text" href="/">home</a></li>
-					<li><a class="tabbar-tabs-text" href="/">about me</a></li>
-					<li><a class="tabbar-tabs-text" href="/">work experience</a></li>
-					<li><a class="tabbar-tabs-text" href="/">projects</a></li>
+					<li><a class="tabbar-tabs-text" href="#home">home</a></li>
+					<li><a class="tabbar-tabs-text" href="#about">about me</a></li>
+					<li><a class="tabbar-tabs-text" href="https://www.linkedin.com/in/alec-candidato-528222190/">work experience</a></li>
+					<li><a class="tabbar-tabs-text" href="#projects">projects</a></li>
 		  	</ul>
 		</div>
 	</nav>
@@ -61,5 +61,9 @@
 	<script type="text/javascript" src="js/materialize.min.js"></script>
 	<script>
 		M.AutoInit();
+
+		$(document).ready(function(){
+			$('.scrollspy').scrollSpy();
+		});
 	</script>
 </body>
