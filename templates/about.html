@@ -1,27 +1,119 @@
-{% extends "index.html" %}
 {% block custom_css %}
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/about.css') }}">
 {% endblock %}
 
-{% block content %}
+{% block about %}
 
-<div class="row valign-wrapper ">
-    <p class="col m5">
-        I was born in Manila, Philippines on October 2nd, 2002; although, my family is originally from the city of Masbate. 
-        I moved to New York City when I was two years old because my mom was offered a job as a high school math teacher there.
-        I grew up in Canarsie, Brooklyn and went through the NYC public school system until I joined Prep for Prep in middle school.
-        Because of this program, I was able to get a scholarship to attend the Browning School on the Upper East Side in Manhattan.
-        Here, I was able to begin exploring my STEM passions. In eleventh grade, I joined the IAC fellowship and began with an internship in front-end
-        development. High school was also an opportunity for me to learn about more aspects of my identity and the world. I attended the
-        Student Diversity Leadership Conference where I learned how to strengthen my character with my diverse indentities. I also participated
-        in the Student Diplomacy Leadership Corps program where I got to spend four weeks in China learning about Chinese culture, Climate Change, and
-        what Chinese scientists have been doing to combat it. These experiences greatly influenced where I ended up going to college:
-        Harvey Mudd, a STEM-focused liberal arts college. As an engineering major, I've been learning under HMC's world-renowned curriculum.
-        Being an "all-around" engineer has helped me succeed in my A.I. Research Internships with J.P. Morgan. Still wanting to learn about
-        the different perspectives of the world, I found myself studying for a semester in Spain at the Uniersidad Carlos III de Madrid. Now, I
-        am a senior and looking forward to what the future has in store for me.
-    </p>
-    <div class="col m7 map"></div>
+<div class="row about">
+	<div class="slider fullscreen col s12">
+		<ul class="slides">
+		  <li class="manila">
+			<img src="/"> <!-- random image -->
+			<div class="caption right-align">
+			  <div class="card-panel z-depth-1">
+				<h3>Manila, Philippines</h3>
+				<h5 class="grey-text text-darken-4 flow-text">
+				  I was born in Manila, Philippines on October 2nd, 2002; although, my family is originally from the city of Masbate. I moved to New York City in 2004 and became an American
+				  citizen in 2018.
+				</h5>
+				<center>
+				  <a class="waves-effect waves-orange-daarken-4 btn-flat">Where I've Been</a>
+				</center>
+			  </div>
+			</div>
+		  </li>
+		  <li class="nyc">
+			<img src="/"> <!-- random image -->
+			<div class="caption left-align">
+			  <div class="card-panel z-depth-1">
+				<h3>New York City, New York</h3>
+				<h5 class="grey-text text-darken-4 flow-text">
+					Growing up in Canarsie, Brooklyn, I became affiliated with a program called Prep for Prep. Prep for Prep is a highly selective leadership development program that prepares students for placement in leading independent
+					schools and continues to work closely with the students through high school graduation and beyond. Through Prep, I got numerous awards, scholarships, and internships. I was also awarded
+					a full time scholarship to the Browning School. It was here that I began developing interests in engineering, computer science, and robotics. You can check out some of my accomplishments below.
+				</h5>
+				<!-- <div class="collection">
+					<p href="#!" class="collection-item">[2014] Prep for Prep</p>
+					<p href="#!" class="collection-item">"Prep for Prep is a leadership development and gifted education program dedicated to expanding educational access to students of color. The organization's programs are targeted toward high achieving New York City minority students and helps with scholarships placement into many of the most respected secondary schools and colleges in the country."</p>
+					<p href="#!" class="collection-item">[2017] Institute for Entrepreneurship</p>
+					<p href="#!" class="collection-item">The Institute for Entrepreneurship (IFE) is an intensive and practical introduction to the business world by means of a course in fundamental entrepreneurship for rising tenth and eleventh graders. During the five week course, students learn basic business and economic concepts, coding and app development, and how to create their own business plans. Each student is paired with a mentor from Google NYC, who provides feedback to the students on both their business idea and pitch. The experience culminates in a business plan competition for seed money to invest in their businesses.</p>
+					<p href="#!" class="collection-item">[2018] Student Diplomacy Corps</p>
+					<p href="#!" class="collection-item">Igniting intellectual curiosity, raising expectations and buiilding global competence, the Student Diplomacy Corps (SDC) promotes college readiness through international education.  Our mission is to engage low income high school students in programs that build tenacity, independent living skills, academic confidence and the tools to succeed in college and our interconnected global community.</p>
+					<p href="#!" class="collection-item">[2019] InterActiveCorps</p>
+					<p href="#!" class="collection-item">The IAC Fellowship is an immersive program is designed to engage the full person, alleviate financial hardship, and reduce barriers to opportunity in the workplace. IAC Fellows have access to a diverse set of competitively paid eight to ten-week summer internships across a variety of IAC businesses such as Dotdash Meredith, The Daily Beast, Angi, and Care.com. These internships put Fellows in the trenches, testing their skills in real world scenarios, and provide exposure to different business models, functions, and roles.</p>
+					<p href="#!" class="collection-item">[2015-2020] First Tech Challenge</p>
+					<p href="#!" class="collection-item">FIRST Tech Challenge, formerly known as FIRST Vex Challenge, is a robotics competition for students in grades 7–12 to compete head to head, by designing, building, and programming a robot to compete in an alliance format against other teams.</p>
+				  </div> -->
+				  <center>
+					<img class="logo" src="https://images.squarespace-cdn.com/content/v1/562b6b72e4b0be3275f73a6f/1590162997908-OE731LXX9HFWOZ5TA66X/Prep+for+Prep.png">
+					<img class="logo" id="browning" src="https://resumator.s3.amazonaws.com/customer_20231030170732_W0ZEZFRYWDLTZ7X5/social_icons/20231109172318_seal_color.png">
+				  </center>
+				</div>
+				<blockquote>
+					Notable Achievements:
+					<div class="chip">Prep for Prep Alum</div>
+					<div class="chip">JPB Foundation Scholar '17</div>
+					<div class="chip">Moody's Foundation Scholar '17</div>
+					<div class="chip">First Tech Challenge NYC Champion '20</div>
+				</blockquote>
+
+			</div>
+		  </li>
+		  <li class="la">
+			<img src="/"> <!-- random image -->
+			<div class="caption right-align">
+			  <div class="card-panel z-depth-1">
+
+				<h3>Los Angeles, California</h3>
+				<h5 class="grey-text text-darken-4 flow-text">
+					In August of 2020, at the peak of COVID, I began attending Harvey Mudd College as a Presidential Scholar.
+					Harvey Mudd College (HMC) is one of the premier engineering, science and mathematics colleges in the United States.
+					HMC educates engineers, scientists and mathematicians who become leaders in their fields and have a clear understanding of the impact their work has on society.
+					At Harvey Mudd, I pursued an Engineering degree with a concentration in Asian-American Studies. While at Mudd, I was involved with the Associated Students of Harvey Mudd College Senate as a Dorm President, the "Kasama" Filipinx Affinity Group, and worked as a 'Grutor' to name a few of my responsibilities.
+					Through Mudd, I was also able to conducte research on and off campus in both humanities and STEM fields. I ended up involved working on projects with J.P. Morgan & Chase's AI Research Team, MIT Lincoln Labs,
+					Silvus Technologies, Amazon Lab126, and Audio Technica. Feel free to check out the projects I worked on!
+				</h5>
+				<center>
+				  <img class="logo" id="hmc" src="https://kids.kiddle.co/images/thumb/5/5e/Harvey_Mudd_College_seal.svg/270px-Harvey_Mudd_College_seal.svg.png">
+				</center>
+				</div>
+				<blockquote>
+					Notable Achievements:
+					<div class="chip">HMC Presidential Scholar</div>
+					<div class="chip">HMC Alum '24</div>
+					<div class="chip">Pending Patent</div>
+					<div class="chip">Published Research</div>
+				</blockquote>
+			</div>
+		  </li>
+		  <li class="madrid">
+			<img src="/"> <!-- random image -->
+			<div class="caption left-align">
+			  <div class="card-panel z-depth-1">
+			  <h3>Madrid, Spain</h3>
+			  <h5 class="grey-text text-darken-4 flow-text">
+					I also studied for a semester in Spain. At Universidad Carlos III de Madrid, I took courses in: Control Engineering, Materials Science and Engineering, Neural Networks,
+					and Culture & Identity in Globalization. I also developed my Spanish-speaking abilities to the point of conversational-competency while residing in a spanish-only host-stay.
+					I have since successfully completed my abroad program and graduated from college, eagerly looking forward to what the future has in store for me :)
+			  </h5>
+			  <center>
+				<img class="logo" id="uc3m" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Logo_UC3M.svg/1200px-Logo_UC3M.svg.png">
+				<br>
+				<a class="waves-effect waves-orange-daarken-4 btn-flat">View My Projects</a>
+
+			  </center>
+			</div>
+			</div>
+		  </li>
+		</ul>
+	  </div>
+
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$('.slider').slider();
+	});
 
+</script>
 {% endblock %}

@@ -1,14 +1,9 @@
-img {
-  position: absolute;
-  z-index: -1;
-  left: 50%;
-  top: 10%;
-}
 #intro {
     height:100%;
 }
 .home {
-  color: #A67B5C;
+  min-height: 100vh;
+
 }
 /* Scroller styling */
 .scroller {
@@ -31,6 +26,15 @@ img {
 /* Content */
 .face {
   height: 30vh;
+}
+.row {
+  /* Full height */
+  height: 1vh;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 h1 {
   margin-bottom: 0px;

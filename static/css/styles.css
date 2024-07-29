@@ -1,14 +1,32 @@
+a {
+    color: grey;
+}
+
 body {
     background-color: ivory;
     font-weight: bold;
 }
 h1, h2, h3, h4, h5, h6, p {
+    font-weight: bold;
+}
+h4, h5, h6, p {
+    font-weight: normal;
     font-family: Georgia, Garamond, 'Times New Roman';
 }
-
-p {
-    font-weight: normal;
+nav {
+    background-color: ivory;
+    box-shadow: none;
 }
+blockquote {
+    border-left: 5px solid #A67B5C;
+    
+}
+
+.slider .indicators .indicator-item.active {
+    background-color: #A67B5C;
+}
+
+
 #head {
     -webkit-transition: width 2s ease;
     -moz-transition: width 2s ease;
@@ -49,4 +67,12 @@ p {
     color: #191919;
     font-weight: bold;
     font-size: 14pt;
+}
+.tabbar-tabs {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.tabbar-tabs-text {
+    color: #191919;
 }

@@ -1,11 +1,57 @@
 p {
     line-height: 2;
 }
-.about {
+h3 {
     color: #A67B5C;
 }
-.map{
-    background-image: url("./../images/map.png");
-    background-position: center; /* Center the image */
-    height:100vh;
+.about {
+    min-height: 100vh;
+    color: rgba(0, 0, 0, 0.87);
+}
+.card-panel {
+    background-color: rgba(255, 255, 255, 0.842);
+}
+.chip {
+    background-color: #A67B5C;
+    color: white;
+}
+.logo {
+    height: 96px !important;
+    width: auto !important;
+    display: inline-block;
+}
+.slider{
+      /* Full height */
+    height: 100vh !important;
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    display: block !important;
+}
+.manila {
+    background-image: url("./../images/manila.jpg");
+    color: rgba(0, 0, 0, 0.87);
+    background-size: 100% auto;
+}
+.nyc {
+    background-image: url("./../images/nyc.jpg");
+    background-size: 100% auto;
+}
+.la {
+    background-image: url("./../images/la.jpg");
+    background-size: 100% auto;
+}
+.madrid {
+    background-image: url("./../images/madrid.jpg");
+    background-size: 100% auto;
+}
+
+#browning {
+    height: 96px !important;
+    width: 120px !important;
+}
+
+#hmc {
+    height: 96px !important;
+    width: 150px !important;
 }
